@@ -19,11 +19,3 @@ CREATE TABLE student_teacher(
     FOREIGN KEY(student_id) REFERENCES student(s_id),
     FOREIGN KEY(teacher_id) REFERENCES teacher(t_id)
 );
-
--- Inserting into join table: should *not* be in your solution file
-INSERT INTO student_teacher VALUES(1, 1);
-INSERT INTO student_teacher VALUES(1, 2);
-INSERT INTO student_teacher VALUES(2, 1);
-INSERT INTO student_teacher VALUES(2, 2);
-INSERT INTO student_teacher VALUES(2, 3);
-INSERT INTO student_teacher VALUES(3, 1);
